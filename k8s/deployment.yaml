@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-placeholder
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-placeholder
+  template:
+    metadata:
+      labels:
+        app: go-placeholder
+    spec:
+      containers:
+        - name: demo-app
+          image: kubeguy/multi-tenant-saas-app:v1
+          ports:
+            - containerPort: 8080
