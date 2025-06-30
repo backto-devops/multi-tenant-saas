@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/backto-devops/multi-tenant-saas.git
-    targetRevision: starter
+    targetRevision: completed
     path: k8s
   destination:
     server: https://kubernetes.default.svc

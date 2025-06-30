@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: demo-app
-          image: kubeguy/multi-tenant-saas-app:v1
+          image: kubeguy/multi-tenant-saas-app:v2
           ports:
             - containerPort: 8080

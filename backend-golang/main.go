@@ -7,7 +7,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		_, err := fmt.Fprintf(w, "Hello from my first GitOps app on ArgoCD!")
+		_, err := fmt.Fprintf(w, "Welcome to first GitOps app on ArgoCD!")
 		if err != nil {
 			return
 		}
